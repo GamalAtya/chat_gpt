@@ -1,5 +1,6 @@
 import 'package:chat_gpt/core/colors/colors.dart';
 import 'package:chat_gpt/core/contants/consts.dart';
+import 'package:chat_gpt/features/dashboard/presentation/pages/dashboard_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
@@ -28,7 +29,7 @@ class ChatAppBarWidget extends StatelessWidget with PreferredSizeWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               GestureDetector(
-                onTap: () => Navigator.pop(context),
+                onTap: () => Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const DashboardPage())),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

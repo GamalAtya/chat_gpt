@@ -10,7 +10,6 @@ abstract class ChatEvent extends Equatable{
 
 class SendChatEvent extends ChatEvent {
   final List<Message> messages;
-
   const SendChatEvent({required this.messages});
   @override
   List<Object> get props => [messages];
